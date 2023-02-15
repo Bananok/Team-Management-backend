@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  redis:
+    image: redis:alpine
+    restart: always
+    ports:
+      - "6379:6379"
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: timetracker
+      POSTGRES_PASSWORD: timetracker
+      POSTGRES_DB: timetracker
+    ports:
+      - "5432:5432"

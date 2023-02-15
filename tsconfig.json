@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "lib": [
+      "es2019"
+    ],
+    "module": "commonjs",
+    "types": [
+      "body-parser",
+      "compression",
+      "cors",
+      "express",
+      "fs-extra",
+      "he",
+      "jest",
+      "joi",
+      "method-override",
+      "morgan",
+      "node",
+      "supertest",
+      "swagger-ui-express",
+      "validator"
+    ],
+    "paths": {
+      "api/*": ["api/*"],
+      "socket/*": ["socket/*"],
+      "config/*": ["config/*"],
+      "utils/*": ["utils/*"],
+      "interfaces/*": ["interfaces/*"],
+      "models/*": ["models/*"],
+      "services/*": ["services/*"],
+      "migrations/*": ["migrations/*"],
+      "e2e/*": ["e2e/*"]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
